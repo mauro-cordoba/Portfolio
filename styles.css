@@ -1,0 +1,90 @@
+:root {
+	--main-white: #f0f0f0;
+	--main-red: #be3144;
+	--main-blue: #45567d;
+	--main-gray: #303841;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#navbar {
+		font-family: 'Press Start 2P', cursive;
+		display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	  background: var(--main-red);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+}
+
+#navbar .nav-list {
+	display: flex;
+	margin-right: 2rem;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: list-item;
+	text-align: center;
+}
+
+.nav-list a {
+	display: block;
+	font-size: 1rem;
+	padding: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+	color: var(--main-white);
+}
+
+#welcome-section {
+	font-family: 'Press Start 2P', cursive;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ybm7sKNzFRAf6PmVW_euVGfZ5q5Uujwt9Q&usqp=CAU);
+}
+
+h1, h2 {
+	color: aliceblue;
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+#welcome-section p {
+	font-size: 2rem;
+	font-weight: 200;
+	font-style: italic;
+	color: var(--main-red);
+	padding: 1.5rem;
+}
+
+section > #welcome-section {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.parallax {
+	background: #fff fixed no-repeat 50% 50%;
+	background-size: cover;
+
+}
