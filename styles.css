@@ -6,6 +6,12 @@
 
 }
 
+@media (prefers-reduced-motion: no-preference) {
+	* {
+		scroll-behavior: smooth;
+	}
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -15,9 +21,10 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(6, auto);
+	grid-template-rows: repeat(7, auto);
 	grid-template-areas: "header header header"
 												"main main main"
+												"about about about"
 												"projects projects projects"
 												"social social social"
 												"contact contact contact"
@@ -36,8 +43,23 @@
 	grid-area: projects;
 }
 
+.container .projects-section .title-projects {
+	background-color: #000;
+	color: #be3144;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.container .projects-section .title-projects h2 {
+	font-family: 'Roboto', sans-serif, Arial;
+	font-size: 3rem;
+	padding: 1em;
+
+}
+
 .container .projects-grid .card {
-	border: 8px solid white;
 	background-color: black;
 	padding: 3px;
 	display: flex;
@@ -61,10 +83,13 @@
 }
 
 .container .nav {
-	background-color: #303841;
+	background-color: #be3144;
 	grid-area: header;
 	min-height: 4rem;
 	display: flex;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
 	justify-content: space-around;
 	align-items: center;
 }
@@ -80,7 +105,7 @@
 }
 
 .container .nav ul li {
-	padding: 2px 10px;
+	padding: 5px 15px;
 
 }
 
@@ -93,8 +118,127 @@
 }
 
 .container #presentation {
-	background-color: #be3144;
+	background-color: #000;
+	background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+	height: 100vw;
+	max-height: 1000px;
 	grid-area: main;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.container #presentation h1 {
+	font-size: 4rem;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+.container #presentation p {
+	font-size: 2.2rem;
+	font-family: 'Roboto', sans-serif;
+	color: #be3144;
+}
+
+#about {
+	background-color: black;
+	grid-area: about;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+}
+
+#about #photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 3rem;
+
+}
+#about aside {
+	display: flex;
+	flex-direction: column;
+	justify-content:first baseline;
+	text-align: center;
+	padding: 1rem;
+}
+
+#about aside h2 {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	padding: 2rem;
+	font-size: 3rem;
+}
+
+#about aside p {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+	padding: 1rem;
+}
+
+.container .social-media {
+	min-height: 5vw;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.container .social-media i {
+	color: #fff;
+}
+
+.container .social-media a {
+	text-decoration: none;
+	color: black;
+}
+
+.container .contact-section-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 5rem;
+	padding: 1rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container .contact-section-header h2 {
+	font-size: 3rem;
+	padding: 1.5em 1em;
+}
+
+.container .contact-section-header p {
+	font-size: 2rem;
+	padding: 0.5em 2em;
+}
+
+.container .contact-survey fieldset {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2em;
+	font-size: 2em;
+}
+
+footer {
+	background-color: #000;
+	color: #fff;
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+footer a {
+	color: #be3144;
 }
 
 .container .projects-section .projects-grid {
