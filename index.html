@@ -10,12 +10,17 @@
     <link 
     href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rock+Salt&family=Rubik+Glitch&display=swap" 
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css"> 
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- START NAV -->
+    <div class="container">
+    <!--NAV BAR -->
 
-    <nav id="navbar" class="nav">
+    <header class="nav">
+      <div class="logotype">
+        <img src="/Logo.jpg">
+      </div>
       <ul class="nav-list">
         <li>
           <a href="#welcome-section">About</a>
@@ -27,15 +32,14 @@
           <a href="#contact">Contact</a>
         </li>
       </ul>
-    </nav>
+    </header>
 
     <!-- END NAV -->
 
     <!-- START WELCOME SECTION -->
 
-    <section id="welcome-section" class="parallax">
+    <section id="presentation" class="parallax">
       <h1>Hey, I am</h1>
-    </br>
       <h2>Mauro Cordoba</h2>
       <p>a web developer</p>
     </section>
@@ -44,115 +48,134 @@
 
     <!-- START PROJECTS SECTION -->
 
-    <section id="projects" class="projects-section">
+    <section class="projects-section">
       <h2 class="projects-section-header">These are some of my projects</h2>
 
       <div class="projects-grid">
-        <a
-          href="https://codepen.io/freeCodeCamp/full/zNqgVx"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Tribute Page
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Random Quote Machine
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a 
-          href="https://codepen.io/freeCodeCamp/full/wgGVVX"
-          target="_blank"
-          class="project project-tile">
+        <div class="card">
+          <a
+            href="https://github.com/mauro-cordoba/Survey-Form"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="/Capture survey form.jpg"
+              alt="screenshoot of website with a survey form"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Survey Form
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+        </div>
+        <div class="card">
+          <a
+            href="https://github.com/mauro-cordoba/Tribute-page"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="/Capture Tribute page.jpg"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Tribute Page
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+        </div>
+        <div class="card">
+          <a 
+            href="#"
+            target="_blank"
+            class="project project-tile">
 
-          <img class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-            alt="project" />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            JavaScript Calculator
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/mVEJag"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Map Data Across the Globe
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/wGqEga"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Wikipedia Viewer
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/KzXQgy"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Tic Tac Toe Game
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
+            <img class="project-image"
+              src="/Quiz Form.jpg"
+              alt="project" />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Quiz Form
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+        </div>
+        <div class="card">
+          <a
+            href="https://github.com/mauro-cordoba/Tecnical-Documentation-Page"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="/Caption technical doc.jpg"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Technical Documentation
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+        </div>
+        <div class="card">
+          <a
+            href="#"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="/Magazine digital.jpg"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Magazine Digital
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+        </div>
+        <div class="card">
+          <a
+            href="https://github.com/mauro-cordoba/Product-Landing-Page"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="/Capture landing page.jpg"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Product Landing Page
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+        </div>
       </div>
-
-      <a
-        href="https://codepen.io/FreeCodeCamp/"
-        class="btn btn-show-all"
-        target="_blank"
-        >Show all<i class="fas fa-chevron-right"></i
-      ></a>
     </section>
 
     <!-- END PROJECTS SECTION -->
+
+    <!-- SOCIAL MEDIA & WORK MEDIA-->
+
+    <div class="social-media">
+      <div class="icons-grid">
+        <a
+          href="https://codepen.io/FreeCodeCamp/"
+          class="git-hub"
+          target="_blank"
+          >Show all<i class="fas fa-chevron-right"></i
+        ></a>
+      </div>
+    </div>
+     <!-- END SOCIAL MEDIA & WORK MEDIA-->
 
     <!-- START CONTACT SECTION -->
 
@@ -201,11 +224,12 @@
       <p>
         &copy; Created for
         <a href="https://www.freecodecamp.com/" target="_blank"
-          >freeCodeCamp <i class="fab fa-free-code-camp"></i
+          >freeCodeCamp <i class="lni lni-website"></i
         ></a>
       </p>
     </footer>
 
     <!-- END FOOTER SECTION -->
+  </div>
   </body>
 </html>
