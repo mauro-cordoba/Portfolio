@@ -33,10 +33,10 @@
 
 .projects-grid {
 	display: grid;
-	grid-template-columns: repeat(2 , 1fr);
-	grid-template-rows: repeat(3, auto);
+	grid-template-columns: repeat(3 , 1fr);
+	grid-template-rows: repeat(2, minmax(200px, 500px));
 	grid-gap: 3px;
-	
+	padding: 5px 30px;
 }
 
 .container .projects-section {
@@ -53,26 +53,67 @@
 }
 
 .container .projects-section .title-projects h2 {
-	font-family: 'Roboto', sans-serif, Arial;
+	font-family: 'Kanit', sans-serif;
+	font-style: italic;
 	font-size: 3rem;
 	padding: 1em;
 
 }
 
 .container .projects-grid .card {
-	background-color: black;
+	position: relative;
+	background-color: red;
 	padding: 3px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	overflow: hidden;
-
+	padding: 5px;
+	
 }
 
-.container .projects-grid .card p {
-	color: #fff;
+.gradient-card {
+	position: absolute;
+	top: 10;
+	left: 10;
+	right: 10;	
+	bottom: 10;
+	border-radius: 50%;
+	background: rgba(0,0,0,.4);
+	background-image: linear-gradient(60deg,transparent 30%,rgba(0,0,0,.7)),radial-gradient(50% 90%,transparent 10%,rgba(0,0,0,.5) 100%);
 }
+
+.gradient-card:hover {
+	top: 0;
+}
+
+.container .projects-grid .card img:hover {
+	transform: scale(0.5);
+	transition: 1200ms;
+}
+
+.container .projects-grid .card #quiz img {
+	width: 50vw;
+}
+
+.container .projects-grid .card #form img {
+	width: 55vw;
+}
+
+.container .projects-grid .card #tribute img {
+	width: 70vw;
+}
+
+.container .projects-grid .card #technical img {
+	width: 60vw;
+	display: none;
+}
+
+
+
+
+
 
 .container .logotype {
 	width: 30vw;
@@ -89,7 +130,7 @@
 	display: flex;
 	width: 100%;
 	position: fixed;
-	z-index: 1;
+	z-index: 100;
 	justify-content: space-around;
 	align-items: center;
 }
@@ -118,10 +159,10 @@
 }
 
 .container #presentation {
-	background-color: #000;
-	background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+	background-image: url(/redLineStyle.jpg);
+	object-fit: cover;
 	height: 100vw;
-	max-height: 1000px;
+	max-height: 950px;
 	grid-area: main;
 	display: flex;
 	justify-content: center;
@@ -134,6 +175,11 @@
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
+	
+}
+
+.container #presentation .title {
+	z-index: 1;
 }
 
 .container #presentation p {
@@ -143,26 +189,56 @@
 }
 
 #about {
-	background-color: black;
 	grid-area: about;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
 }
 
 #about #photo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 3rem;
-
+	padding: 20px 60px;
+	z-index: 1;
 }
+
+#about #background {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-image: url(/back2.jpg);
+	object-fit: cover;
+}
+
+#about #cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.3);
+    background-image: radial-gradient(circle,transparent 1% rgba(255,255,255,1) 10%, rgba(0,0,0,1) 76%);
+}
+
+.gradient {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.1);
+    background-image: linear-gradient(180deg,transparent 30%,rgba(0,0,0,.3)),radial-gradient(95% 100%,transparent 30%,rgba(0,0,0,.3) 100%);
+}
+
 #about aside {
 	display: flex;
 	flex-direction: column;
-	justify-content:first baseline;
-	text-align: center;
-	padding: 1rem;
+	justify-content: end;
+	text-align:justify;
+	align-items: flex-start;
+	padding: 3rem 2rem;
+	z-index: 1;
+
 }
 
 #about aside h2 {
@@ -179,8 +255,17 @@
 	padding: 1rem;
 }
 
-.container .social-media {
-	min-height: 5vw;
+.container .contact-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "title form"
+						"social form"
+						"image submit";
+}
+
+.container .contact-section .social-media {
+	grid-area: social;
 	display: flex;
 	flex-direction: row;
 	text-align: center;
@@ -199,17 +284,17 @@
 }
 
 .container .contact-section-header {
+	grid-area: title;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 5rem;
-	padding: 1rem;
+	min-height: 4rem;
 	font-family: 'Roboto', sans-serif;
 }
 
 .container .contact-section-header h2 {
 	font-size: 3rem;
-	padding: 1.5em 1em;
+	padding: 1em 1em;
 }
 
 .container .contact-section-header p {
@@ -217,13 +302,54 @@
 	padding: 0.5em 2em;
 }
 
-.container .contact-survey fieldset {
+.contact-survey {
+	grid-area: form;
+}
+
+.contact-section #title {
+	margin-bottom: 20px;
+}
+
+.contact-survey fieldset {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 2em;
 	font-size: 2em;
+	border: none;
+	background-color: #45567d;
+}
+
+.contact-survey fieldset label {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+
+}
+
+.contact-section figcaption {
+	grid-area: image;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-section figcaption img {
+	width: 20%;
+}
+
+.button {
+	grid-area: submit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: red;
+}
+
+.button input {
+	font-size: 1rem;
+	padding: 5px;
+	margin: 3px;
 }
 
 footer {

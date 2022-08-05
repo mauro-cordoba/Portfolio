@@ -3,7 +3,7 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css"> 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -38,18 +38,28 @@
           <h1>Mauro Cordoba</h1>
            <p>a web developer</p>
       </div>
+      <div class="gradient"></div>
     </section>
 
     <!-- END WELCOME SECTION -->
 
     <div id="about">
-      <section id="photo">
-        <img src="/photo.png">
-      </section>
-      <aside>
-        <h2>My short storylife</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, aperiam. Eum asperiores sit, beatae soluta atque harum excepturi? Fuga exercitationem porro est nemo voluptatum pariatur molestiae harum expedita, doloremque quod?</p>
-      </aside>
+      <div id="background" class="parallax">
+        <div id="photo">
+          <img src="/photo.png">
+        </div>
+        <aside>
+          <h2>A short storylife</h2>
+          <p>
+            After working for more than 10 years in industrial tasks and not enjoying what I was doing or where my life was headed, I decided to resign and reorganize my life. My age and my experience have taught me the courage and dedication necessary to achieve all the fruit of one's own efforts.
+          </p>
+          <p>
+            I knew that the road would not be easy, but I was willing to endure it and try to enjoy it. With some experience in graphic design after my experience in the architecture career, I began to study in a self-taught way and then in bootcamps.
+          </p>
+        </aside>
+        <div class="gradient"></div>
+        <div id="cover"></div>
+      </div>
     </div>
 
     <!-- START PROJECTS SECTION -->
@@ -64,89 +74,70 @@
           <a
             href="https://github.com/mauro-cordoba/Survey-Form"
             target="_blank"
-            class="project project-tile"
+            id="form"
           >
             <img
               class="project-image"
               src="/Capture survey form.jpg"
               alt="screenshoot of website with a survey form"
             />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Survey Form
-              <span class="code">&#47;&gt;</span>
-            </p>
           </a>
+          <div class="gradient-card"></div>
         </div>
         <div class="card">
           <a
             href="https://github.com/mauro-cordoba/Tribute-page"
             target="_blank"
-            class="project project-tile"
+            id="tribute"
           >
             <img
               class="project-image"
               src="/Capture Tribute page.jpg"
               alt="project"
             />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Tribute Page
-              <span class="code">&#47;&gt;</span>
-            </p>
           </a>
+          <div class="gradient-card"></div>
         </div>
         <div class="card">
           <a 
             href="#"
             target="_blank"
-            class="project project-tile">
+            id="quiz">
 
             <img class="project-image"
               src="/Quiz Form.jpg"
               alt="project" />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Quiz Form
-              <span class="code">&#47;&gt;</span>
-            </p>
           </a>
+          <div class="gradient-card"></div>
         </div>
         <div class="card">
+          <div class="gradient-card">
           <a
             href="https://github.com/mauro-cordoba/Tecnical-Documentation-Page"
             target="_blank"
-            class="project project-tile"
+            id="technical"
           >
             <img
               class="project-image"
               src="/Caption technical doc.jpg"
               alt="project"
             />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Technical Documentation
-              <span class="code">&#47;&gt;</span>
-            </p>
           </a>
+          </div>
         </div>
         <div class="card">
           <a
             href="#"
             target="_blank"
-            class="project project-tile"
+            class="magazine"
           >
             <img
               class="project-image"
               src="/Magazine digital.jpg"
               alt="project"
             />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Magazine Digital
-              <span class="code">&#47;&gt;</span>
-            </p>
           </a>
+          <div class="gradient-card"></div>
         </div>
         <div class="card">
           <a
@@ -159,71 +150,70 @@
               src="/Capture landing page.jpg"
               alt="project"
             />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Product Landing Page
-              <span class="code">&#47;&gt;</span>
-            </p>
           </a>
+          <div class="gradient-card"></div>
         </div>
       </div>
     </section>
 
     <!-- END PROJECTS SECTION -->
 
-    <!-- SOCIAL MEDIA & WORK MEDIA-->
-
-    <div class="social-media">
-      <div class="icons-grid">
-        <a
-          href="https://github.com/mauro-cordoba?tab=repositories"
-          class="git-hub"
-          target="_blank"
-          >Linkedin<i class="lni lni-linkedin-original"></i
-        ></a>
-        <a
-          href="https://github.com/mauro-cordoba?tab=repositories"
-          class="git-hub"
-          target="_blank"
-          >Github<i class="lni lni-github-original"></i
-        ></a>
-        <a
-          href="https://github.com/mauro-cordoba?tab=repositories"
-          class="git-hub"
-          target="_blank"
-          >Codepen<i class="lni lni-codepen"></i
-        ></a>
-        <a
-          href="https://github.com/mauro-cordoba?tab=repositories"
-          class="git-hub"
-          target="_blank"
-          >Instagram<i class="lni lni-instagram-original"></i
-        ></a>
-      </div>
-    </div>
-     <!-- END SOCIAL MEDIA & WORK MEDIA-->
-
     <!-- START CONTACT SECTION -->
 
     <section id="contact" class="contact-section">
+      <div class="social-media">
+        <div class="icons-grid">
+          <a
+            href="https://github.com/mauro-cordoba?tab=repositories"
+            class="git-hub"
+            target="_blank"
+            >Linkedin<i class="lni lni-linkedin-original"></i
+          ></a>
+          <a
+            href="https://github.com/mauro-cordoba?tab=repositories"
+            class="git-hub"
+            target="_blank"
+            >Github<i class="lni lni-github-original"></i
+          ></a>
+          <a
+            href="https://github.com/mauro-cordoba?tab=repositories"
+            class="git-hub"
+            target="_blank"
+            >Codepen<i class="lni lni-codepen"></i
+          ></a>
+          <a
+            href="https://github.com/mauro-cordoba?tab=repositories"
+            class="git-hub"
+            target="_blank"
+            >Instagram<i class="lni lni-instagram-original"></i
+          ></a>
+        </div>
+      </div>
       <div class="contact-section-header">
         <h2>Let's work together...</h2>
         <p>How do you take your coffee?</p>
       </div>
-      <div class="contact-survey">
-        <form action='https://www.freecodecamp.com/email-submit'>
-          <fieldset>
-            <label>Name</label><input type="text" name="name" required />
-            <label>Surname</label><input type="text" name="surname" required />
-            <label>City</label><input type="text" name="city"/>
-            <label>Email</label><input type="email" name="email" required />
-            <label>Phone</label><input type="tel" name="phone" />
-            <label>Ask me a question</label>
-              <textarea name="bio" rows="5" cols="50" placeholder="Let us know your opinion about quality of product for example"></textarea>
+      <figcaption>
+        <img src="/tag.png">
+      </figcaption>
+
+
+      <!--FORM CONTACT-->
+          <div class="contact-survey">
+            <form action='https://www.freecodecamp.com/email-submit'>
+              <fieldset>
+                <label id="title">CONTACTO</label>
+                <label>Name</label><input type="text" name="name" required />
+                <label>Email</label><input type="email" name="email" required />
+                <label>Phone</label><input type="tel" name="phone" />
+                <label>Ask me a question</label>
+                <textarea name="bio" rows="5" cols="50" placeholder="Let us know your opinion about quality of product for example"></textarea>
+              </fieldset>
+            </form>
+          </div>
+          <div class="button">
             <input id="submit" type="submit" value="Send" class="btn" />
-          </fieldset>
-        </form>
-      </section>
+              </div>
       </div>
     </section>
 
