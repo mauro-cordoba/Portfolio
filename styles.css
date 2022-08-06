@@ -60,26 +60,67 @@
 }
 
 .container .projects-grid .card {
-    background: #fff;
+    background: black;
     text-align: center;
     position: relative;
     overflow: hidden;
     cursor: pointer;
     transition: all 900ms;
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .container .projects-grid .card .title-card {
 	position: absolute;
 	font-family: 'Kanit', sans-serif;
 	font-size: 25px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
 	color: white;
-	padding: 350px;
+	padding: 400px;
 	background: rgba(0,0,0,.5);
-	margin: auto;
+	white-space: nowrap;
+}
+
+.card-description {
+	font-family: 'Kanit', sans-serif;
+	background: rgba(0,0,0,.25);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: absolute;
+	opacity: 0;
+
+}
+
+.card-description p {
+	font-size: 1.2em;
+	color: white;
+}
+
+.container .projects-grid .card:hover .card-description {
+	opacity: 1;
+	transition: all 900ms;
+}
+
+.container .projects-grid .card .card-description:hover .title-card {
+	display: none;
+}
+
+.container .projects-grid .card .title-card .card-description p:hover {
+	display: none;
+}
+
+.container .projects-grid .card .title-card:hover {
+	opacity: 0;
+	transition: all 1200ms;
 }
 
 .container .logotype {
