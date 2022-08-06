@@ -32,11 +32,10 @@
 	}
 
 .projects-grid {
-	display: grid;
-	grid-template-columns: repeat(3 , 1fr);
-	grid-template-rows: repeat(2, minmax(200px, 500px));
-	grid-gap: 3px;
-	padding: 5px 30px;
+    display: grid;
+	gap: 5px;
+	grid-auto-rows: 35rem;
+	grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 }
 
 .container .projects-section {
@@ -61,59 +60,27 @@
 }
 
 .container .projects-grid .card {
-	position: relative;
-	background-color: red;
-	padding: 3px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	overflow: hidden;
-	padding: 5px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 900ms;
 	
 }
 
-.gradient-card {
+.container .projects-grid .card .title-card {
 	position: absolute;
-	top: 10;
-	left: 10;
-	right: 10;	
-	bottom: 10;
-	border-radius: 50%;
-	background: rgba(0,0,0,.4);
-	background-image: linear-gradient(60deg,transparent 30%,rgba(0,0,0,.7)),radial-gradient(50% 90%,transparent 10%,rgba(0,0,0,.5) 100%);
+	font-family: 'Kanit', sans-serif;
+	font-size: 25px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	padding: 350px;
+	background: rgba(0,0,0,.5);
+	margin: auto;
 }
-
-.gradient-card:hover {
-	top: 0;
-}
-
-.container .projects-grid .card img:hover {
-	transform: scale(0.5);
-	transition: 1200ms;
-}
-
-.container .projects-grid .card #quiz img {
-	width: 50vw;
-}
-
-.container .projects-grid .card #form img {
-	width: 55vw;
-}
-
-.container .projects-grid .card #tribute img {
-	width: 70vw;
-}
-
-.container .projects-grid .card #technical img {
-	width: 60vw;
-	display: none;
-}
-
-
-
-
-
 
 .container .logotype {
 	width: 30vw;
