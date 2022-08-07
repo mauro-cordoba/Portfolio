@@ -20,13 +20,11 @@
 .container {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(7, auto);
-	grid-template-areas: "header header header"
-												"main main main"
+	grid-template-columns: auto;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 						"main main main"
 												"about about about"
 												"projects projects projects"
-												"social social social"
 												"contact contact contact"
 												"footer footer footer";
 	}
@@ -61,7 +59,6 @@
 .container .projects-grid .card {
     background: black;
     text-align: center;
-    position: relative;
     overflow: hidden;
     cursor: pointer;
     transition: all 900ms;
@@ -147,12 +144,10 @@
 }
 
 .container .nav {
-	background-color: #be3144;
 	grid-area: header;
 	min-height: 4rem;
 	display: flex;
 	width: 100%;
-	position: fixed;
 	z-index: 100;
 	justify-content: space-around;
 	align-items: center;
@@ -183,7 +178,6 @@
 
 .container #presentation {
 	background-image: url(/redLineStyle.jpg);
-	position: relative;
 	object-fit: cover;
 	height: 100vw;
 	max-height: 950px;
@@ -199,9 +193,6 @@
 }
 
 .container #presentation .photography .box-photo {
-	position: absolute;
-	top: 0;
-	right: 0;
 	width: 650px;
 	height: 650px;
 	background-color: rgb(167, 18, 18);
@@ -244,7 +235,6 @@
 }
 
 #about #background {
-	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
