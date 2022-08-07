@@ -138,13 +138,6 @@
 	transition: all 1200ms;
 }
 
-@keyframes expansion {
-	to {
-		transform: scale(0.8);
-		transition: all 1200ms;
-	}
-}
-
 .container .logotype {
 	width: 30vw;
 }
@@ -190,15 +183,32 @@
 
 .container #presentation {
 	background-image: url(/redLineStyle.jpg);
+	position: relative;
 	object-fit: cover;
 	height: 100vw;
 	max-height: 950px;
 	grid-area: main;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	text-align: center;
 }
+
+.container #presentation .photography {
+	background-color: #f0f0f0;
+}
+
+.container #presentation .photography .box-photo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 650px;
+	height: 650px;
+	background-color: rgb(167, 18, 18);
+	border-radius: 0% 0% 0% 60%;
+	overflow: hidden;
+}
+
 
 .container #presentation h1 {
 	font-size: 4rem;
@@ -210,12 +220,14 @@
 
 .container #presentation .title {
 	z-index: 1;
+	margin-left: 100px;
 }
 
 .container #presentation p {
 	font-size: 2.2rem;
 	font-family: 'Roboto', sans-serif;
 	color: #be3144;
+	
 }
 
 #about {
@@ -240,7 +252,7 @@
 	object-fit: cover;
 }
 
-#about #cover {
+#about #cov5r {
 	position: absolute;
 	top: 0;
 	left: 0;
