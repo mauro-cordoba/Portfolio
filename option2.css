@@ -39,14 +39,6 @@ header nav{
     display: flex;
 }
 
-#search i{
-    position: absolute;
-    color: #FFDE59;
-    top: 8px;
-    font-weight: bolder;
-    font-size: 19px;
-    left: 8px;
-}
 nav input{
     border-radius: 20px;
     outline: none;
@@ -71,6 +63,7 @@ nav ul li a{
     padding: 10px 25px;
     font-weight:500;
     color: white;
+    cursor: pointer;
 }
 nav ul li a:hover{
     color: #FFDE59;
@@ -105,30 +98,42 @@ nav ul li a:hover{
     }
 }
 
+.waves {
+    width: 100%;
+    height: 80vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
 .wave {
     background: rgb(255, 255, 255, 25%);
-    border-radius: 1000% 1000% 0 0;
     position: absolute;
+    border-radius: 1000% 1000% 0 0;
     width: 200%;
     height: 12em;
     animation: wave 10s -3s linear infinite;
     transform: translate3d(0, 0, 0);
     opacity: 0.8;
-    top: 29.1vw;
+    bottom: 0;
     left: 0;
-    z-index: -1;
 }
 
 .wave:nth-of-type(2) {
     bottom: -1.25em;
     animation: wave 18s linear reverse infinite;
     opacity: 0.5;
+    bottom: 0;
+    left: 0;
 }
 
 .wave:nth-last-of-type(3) {
     bottom: -2.5em;
     animation: wave 25s -1s reverse infinite;
     opacity: 0.9;
+    bottom: 0;
+    left: 0;
 }
 
 
@@ -165,7 +170,8 @@ nav ul li a:hover{
 .main .main-one{
     width: 45%;
     padding: 40px 30px;
-    padding-left: 150px;
+    padding-left: 120px;
+    z-index: 1;
 }
 .main-one h1{
     font-size: 80px;
@@ -197,7 +203,7 @@ nav ul li a:hover{
 }
 .main .myphoto{
     width: 50%;
-    margin-left: 150px;
+    z-index: 1;
 }
 .myphoto img{
     width: 550px;
@@ -420,3 +426,16 @@ footer .social i{
 .social i:hover{
     color: palevioletred;
 }
+
+.tracker {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    z-index: 9999;
+    pointer-events: none;
+    transition: all .15s;
+  }
+  .tracker img {
+    width: 50%;
+    height: 50%;
+  }
