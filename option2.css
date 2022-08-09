@@ -11,6 +11,7 @@
 body{
     background-color: #1E1E1E;
 }
+
 .container{
     width: 100%;
     background-color: #1E1E1E;
@@ -74,6 +75,7 @@ nav ul li a:hover{
     color: #FFDE59;
 }
 
+
 .container .main{
     position: relative;
     width: 100%;
@@ -105,7 +107,7 @@ nav ul li a:hover{
 
 .waves {
     width: 100%;
-    height: 50vw;
+    height: 40vw;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -173,7 +175,7 @@ nav ul li a:hover{
 }
 
 .main .main-one{
-    width: 45%;
+    width: 50%;
     padding: 40px 30px;
     padding-left: 100px;
     z-index: 1;
@@ -213,26 +215,22 @@ nav ul li a:hover{
     align-items: center;
     justify-content: center;
 }
-.myphoto img{
-    width: 550px;
-
+.myphoto img {
+    width: 70%;
 }
 
 .projects{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
     padding: 50px 100px;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
 .description-projects {
-    width: 30%;    
-    padding-top: 50px;
-    padding-left: 80px;
-    padding-bottom: 20px;
+    width: 35%;    
+    padding: 50px 100px;
 }
 
 .projects h1{
@@ -326,7 +324,7 @@ nav ul li a:hover{
     margin: 6px 0;
     border-radius: 50%;
 }
-.projects button{
+.projects button {
     background-color: transparent;
     cursor: pointer;
     color: white;
@@ -339,6 +337,12 @@ nav ul li a:hover{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin-top: 25px;
     border-radius: 50px;
+}
+
+.projects button:hover {
+    background: #FFDE59;
+    color: black;
+    transition: all 700ms;
 }
 
 .about{
@@ -484,10 +488,14 @@ footer .social i{
     .main .main-one {
         transform: scale(0.9);
         transition: all 900ms linear;
+        padding-left: 15px;
+        padding-right: 0;
     }
 
+
+
     .description-projects {
-        padding-left: 20px;
+        width: 80%;
     }
 
 }
