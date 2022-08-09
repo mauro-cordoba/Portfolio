@@ -14,8 +14,8 @@
           <div class="logo">M / C<span> .</span></div>
           <nav>
             <button class="switch" id="switch">
-              <span><i class="lni lni-night"></i></span>
               <span><i class="lni lni-sun"></i></span>
+              <span><i class="lni lni-night"></i></span>
             </button>
             <ul class="flex">
               <li><a href="#skill"> Skills</a></li>
@@ -161,16 +161,28 @@
           backSpeed: 130,
           loop: true,
         });
-        /*const tracker = document.querySelector(".tracker");
-          document.body.addEventListener("mousemove", e => {
-            tracker.style.left = `${e.clientX}px`;
-            tracker.style.top = `${e.clientY}px`;
-        });*/
-        const btnSwicth = document.querySelector('#switch');
-        btnSwicth.addEventListener('click'), () => {
+
+        const btnSwicth = document.getElementById('switch');
+
+        btnSwicth.addEventListener('click', () => {
           document.body.classList.toggle('dark');
           btnSwicth.classList.toggle('active');
+
+          if(document.body.classList.contains('dark')) {
+            localStorage.setItem('dark-mode', 'true');
+        } else {
+          localStorage.setItem('dark-mode', 'false');
         }
+      });
+
+      if(localStorage.getItem('dark-mode') === 'true' ) {
+        document.body.classList.add('dark');
+        btnSwicth.classList.add('active');
+      } else {
+        document.body.classList.remove('dark');
+        btnSwicth.body.classList.remove('active');
+      };
+
       </script>
     </body>
 </body>
