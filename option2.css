@@ -12,6 +12,10 @@ body{
     background-color: #1E1E1E;
 }
 
+body.dark {
+    background-color: #FFDE59;
+}
+
 .container{
     width: 100%;
     background-color: #1E1E1E;
@@ -75,6 +79,49 @@ nav ul li a:hover{
     color: #FFDE59;
 }
 
+.switch {
+    background: #344d5b;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex ;
+    outline: none;
+}
+
+.switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #fff;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: 400ms ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch:active {
+    background: orange;
+    color: #000;
+}
+
+.switch::after.switch:active {
+    right: 0;
+    left: unset;
+
+}
 
 .container .main{
     position: relative;
@@ -230,7 +277,7 @@ nav ul li a:hover{
 
 .description-projects {
     width: 35%;    
-    padding: 50px 100px;
+    padding: 50px 10px 20px 100px;
 }
 
 .projects h1{
@@ -259,7 +306,13 @@ nav ul li a:hover{
     border-radius: 50px;
 }
 
+.projects .button:hover {
+    transform: scale(1.03);
+    transition: all 600ms;
+}
+
 .projects-div{
+    position: relative;
     width:300px;
     height: 360px;
     z-index: 100;
@@ -271,53 +324,67 @@ nav ul li a:hover{
     flex-direction: column;
 
 }
+
 .projects-div:hover{
-    transform: rotate(10deg);
-}
-.div-1{
-    top: 8%;
-    right: 42%;
-    background-image: url(/Capture\ survey\ form.jpg);
-    background-size: 100%;
+    transform: rotate(5deg);
+    box-shadow: 2px 5px 5px 2px wheat;
 }
 
-.div-1::before {
+.div-1::before, .div-2::before, .div-3::before, .div-4::before, .div-5::before {
     content: '';
     position: absolute;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.45);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.div-1{
+    background-image: url(/Capture\ survey\ form.jpg);
+    background-position: center center;
+    background-size: 130%;
 
 }
 
 .div-2{
     background-image: url(/Caption\ technical\ doc.jpg);
     background-size: 150%;
+
 }
 
 .div-3{
     background-image: url(/Capture\ Tribute\ page.jpg);
     background-size: 160%;
+
 }
 
 .div-4{
     background-image: url(/Magazine\ digital.jpg);
     background-size: 120%;
+
 }
 .div-5{
     background-image: url(/Capture\ landing\ page.jpg);
     background-size: 135%;
+ 
 }
 
 
 
 .projects-div h3{
     font-size: 23px;
-    padding:5px 30px;
+    padding: 25px 30px;
     color: #FFDE59;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 .projects-div p{
     width: 80%;
     margin:0 auto;
     text-align: center;
+    position: relative;
 }
 .projects-div img{
     width: 100px;
@@ -325,6 +392,7 @@ nav ul li a:hover{
     border-radius: 50%;
 }
 .projects button {
+    position: relative;
     background-color: transparent;
     cursor: pointer;
     color: white;
@@ -342,7 +410,8 @@ nav ul li a:hover{
 .projects button:hover {
     background: #FFDE59;
     color: black;
-    transition: all 700ms;
+    transform: scale(1.08);
+    transition: all 600ms;
 }
 
 .about{
