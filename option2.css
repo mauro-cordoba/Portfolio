@@ -379,6 +379,11 @@ nav ul li a:hover{
     border-radius: 50px;
 }
 
+.ligth .projects .button {
+    background: var(--background-button-ligth);
+    color: var(--border-color-day);
+}
+
 .projects .button:hover {
     transform: scale(1.03);
     transition: all 600ms;
@@ -397,7 +402,7 @@ nav ul li a:hover{
     transition: all 0.2s ease-out;
     display: flex;
     flex-direction: column;
-
+    overflow: hidden;
 }
 
 .ligth .projects-div:hover {
@@ -409,67 +414,44 @@ nav ul li a:hover{
     box-shadow: 2px 5px 5px 2px wheat;
 }
 
-.div-1::before, .div-2::before, .div-3::before, .div-4::before, .div-5::before {
-    content: '';
-    position: absolute;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.45);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.projects-div:hover .img {
+    transform: scale(1.03);
+    transition: all 600ms;
+    filter: none;
 }
 
-.div-1{
-    background-image: url(/Capture\ survey\ form.jpg);
-    background-position: center center;
-    background-size: 130%;
-}
+.projects-div img:nth-of-type(1) {
+    filter: blur(3px) grayscale(0.8) brightness(50%);
 
-.div-2{
-    background-image: url(/Caption\ technical\ doc.jpg);
-    background-size: 150%;
-}
-
-.div-3{
-    background-image: url(/Capture\ Tribute\ page.jpg);
-    background-size: 160%;
-}
-
-.div-4{
-    background-image: url(/Magazine\ digital.jpg);
-    background-size: 120%;
-}
-.div-5{
-    background-image: url(/Capture\ landing\ page.jpg);
-    background-size: 135%;
 }
 
 .projects-div h3{
+    position: absolute;
     font-size: 23px;
-    padding: 25px 30px;
+    white-space: nowrap;
+    padding: 10px;
     color: #FFDE59;
     font-family: 'Roboto', sans-serif;
-    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .projects-div p{
+    position: absolute;
     width: 80%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin:0 auto;
     text-align: center;
-    position: relative;
 }
 
 .ligth .projects-div p {
-    color: var(--font-nigth);
+    color: var(--font-ligth);
 }
 
-.projects-div img{
-    width: 100px;
-    margin: 6px 0;
-    border-radius: 50%;
-}
 .projects button {
-    position: relative;
+    position: absolute;
     background-color: transparent;
     cursor: pointer;
     color: white;
@@ -481,6 +463,12 @@ nav ul li a:hover{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin-top: 25px;
     border-radius: 50px;
+    bottom: 20%;
+    left: 19%;
+}
+
+.ligth .projects button {
+    color: var(--font-ligth);
 }
 
 .projects button:hover {
@@ -632,12 +620,26 @@ nav ul li a:hover{
     background-color: var(--background-nigth);
 }
 
+.box #contact-sunmit {
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 8px 15px;
+    padding-left: 33px;
+    border:2px solid #FFDE59;
+    font-size: 16px;
+    height: 13px;
+    width: 10%;
+}
+
 .send{
     background: linear-gradient(#FFDE59 , #ddb100);
-    font-size: 19px !important;
     font-weight: 600;
     cursor: pointer;
-    margin: 30px auto !important;
+}
+
+.ligth .contact .box input {
+    color: var(--border-color-day);
 }
 
 /*--SECTION FOOTER--*/
