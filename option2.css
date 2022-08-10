@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@500;700;900&display=swap');
 :root {
-   --background-nigth--: #1E1E1E;
-   --background-day--: #FFDE59;
-   --border-color-nigth--: #ffc359;
-   --border-color-day--: #716b5f;
+   --background-nigth: #1E1E1E;
+   --background-day: #FFDE59;
+   --border-color-nigth: #ffc359;
+   --border-color-day: #716b5f;
+   --font-nigth: rgb(234, 241, 241);
 }
 
 *{
@@ -16,15 +17,15 @@
     align-items: center;
 }
 
-.dark .container {
+.ligth .container {
     background-color: #FFDE59;
 }
 
-.dark header {
+.ligth header {
     color: var(--background-nigth--);
 }
 
-.dark nav ul li a {
+.ligth nav ul li a {
     color: var(--background-nigth--)
 }
 
@@ -33,6 +34,9 @@
     background-color: #1E1E1E;
     overflow-x: hidden;
 }
+
+/*--HEADER--*/
+
 .container header{
     width: 100%;
     height: 9vh;
@@ -40,6 +44,7 @@
     justify-content: space-between;
 }
 header .logo{
+    color: var(--font-nigth);
     font-size: 45px;
     font-weight: 600;
     width: 30%;
@@ -50,7 +55,11 @@ header .logo{
     font-size: 70px;
 }
 
-.dark .logo span {
+.ligth header .logo {
+    color: var(--font-ligth);
+}
+
+.ligth .logo span {
     color: var(--border-color-day--);
 }
 
@@ -93,6 +102,8 @@ nav ul li a{
 nav ul li a:hover{
     color: #FFDE59;
 }
+
+/*--DARK MODE--*/
 
 .switch {
     background: #344d5b;
@@ -137,6 +148,7 @@ nav ul li a:hover{
     left: unset;
     right: 0; 
 }
+/*--MAIN BACKGROUND PRESENTATION--*/
 
 .container .main{
     position: relative;
@@ -236,6 +248,8 @@ nav ul li a:hover{
     }
 }
 
+/*--FIRST PRESENTATION-*/
+
 .main .main-one{
     width: 50%;
     padding: 40px 30px;
@@ -243,6 +257,7 @@ nav ul li a:hover{
     z-index: 1;
 }
 .main-one h1{
+    color: var(--font-nigth);
     font-size: 80px;
 }
 .main-one span{
@@ -251,11 +266,16 @@ nav ul li a:hover{
     color: #FFDE59;
 }
 .main-one p{
+    color: var(--font-nigth);
     font-size: 17px;
     padding: 10px 0;
 }
 
-.dark .static-text {
+.ligth .main-one p {
+    color: var(--font-ligth);
+}
+
+.ligth .static-text {
     color: black;
 }
 
@@ -282,9 +302,14 @@ nav ul li a:hover{
     align-items: center;
     justify-content: center;
 }
+
+/*--IMAGE MAIN--*/
+
 .myphoto img {
     width: 70%;
 }
+
+/*--SECTION PROJECTS--*/
 
 .projects{
     display: flex;
@@ -301,6 +326,7 @@ nav ul li a:hover{
 }
 
 .projects h1{
+    color: var(--font-nigth);
     font-size: 50px;
     line-height: 49px;
     font-weight: 800;
@@ -309,6 +335,7 @@ nav ul li a:hover{
     color: #FFDE59;
 }
 .projects p{
+    color: var(--font-nigth);
     font-size: 17px;
     font-weight: 400;
     padding-top: 20px;
@@ -330,6 +357,8 @@ nav ul li a:hover{
     transform: scale(1.03);
     transition: all 600ms;
 }
+
+/*--CARDS PROJECTS--*/
 
 .projects-div{
     position: relative;
@@ -365,33 +394,26 @@ nav ul li a:hover{
     background-image: url(/Capture\ survey\ form.jpg);
     background-position: center center;
     background-size: 130%;
-
 }
 
 .div-2{
     background-image: url(/Caption\ technical\ doc.jpg);
     background-size: 150%;
-
 }
 
 .div-3{
     background-image: url(/Capture\ Tribute\ page.jpg);
     background-size: 160%;
-
 }
 
 .div-4{
     background-image: url(/Magazine\ digital.jpg);
     background-size: 120%;
-
 }
 .div-5{
     background-image: url(/Capture\ landing\ page.jpg);
     background-size: 135%;
- 
 }
-
-
 
 .projects-div h3{
     font-size: 23px;
@@ -434,7 +456,10 @@ nav ul li a:hover{
     transition: all 600ms;
 }
 
+/*--SECTION ABOUT ME--*/
+
 .about{
+    color: var(--font-nigth);
     width: 100%;
     height: 400px;
     padding: 30px 50px;
@@ -480,6 +505,8 @@ nav ul li a:hover{
     transform: scale(1.02);
 }
 
+/*--SECTION CONTACT ME--*/
+
 .contact{
     width: 100%;
     text-align: center;
@@ -490,6 +517,7 @@ nav ul li a:hover{
 }
 
 .contact h1{
+    color: var(--font-nigth);
     font-size: 50px;
 }
 .contact h1 span{
