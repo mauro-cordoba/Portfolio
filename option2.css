@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@500;700;900&display=swap');
+:root {
+   --background-nigth--: #1E1E1E;
+   --background-day--: #FFDE59;
+   --border-color-nigth--: #ffc359;
+   --border-color-day--: #716b5f;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,23 +15,23 @@
     display: flex;
     align-items: center;
 }
-body{
-    background-color: #1E1E1E;
-}
 
 .dark .container {
     background-color: #FFDE59;
 }
 
-.dark .logo span {
-    color:rgba(0, 0, 0, 0.45);
+.dark header {
+    color: var(--background-nigth--);
+}
+
+.dark nav ul li a {
+    color: var(--background-nigth--)
 }
 
 .container{
     width: 100%;
     background-color: #1E1E1E;
     overflow-x: hidden;
-    color: white;
 }
 .container header{
     width: 100%;
@@ -41,6 +48,10 @@ header .logo{
 .logo span{
     color: #FFDE59;
     font-size: 70px;
+}
+
+.dark .logo span {
+    color: var(--border-color-day--);
 }
 
 header nav{
@@ -243,6 +254,11 @@ nav ul li a:hover{
     font-size: 17px;
     padding: 10px 0;
 }
+
+.dark .static-text {
+    color: black;
+}
+
 .main-one button{
     background-color: #FFDE59;
     outline: none;
