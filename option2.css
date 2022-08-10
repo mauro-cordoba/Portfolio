@@ -5,6 +5,8 @@
    --border-color-nigth: #ffc359;
    --border-color-day: #716b5f;
    --font-nigth: rgb(234, 241, 241);
+   --font-ligth: black;
+   --background-button-ligth: linear-gradient(#FFDE59 , #ddb100);
 }
 
 *{
@@ -35,6 +37,14 @@
     overflow-x: hidden;
 }
 
+.ligth .container h1 {
+    color: var(--font-ligth);
+}
+
+.ligth .container p {
+    color: var(--font-ligth);
+}
+
 /*--HEADER--*/
 
 .container header{
@@ -60,7 +70,7 @@ header .logo{
 }
 
 .ligth .logo span {
-    color: var(--border-color-day--);
+    color: orange;
 }
 
 header nav{
@@ -101,6 +111,10 @@ nav ul li a{
 }
 nav ul li a:hover{
     color: #FFDE59;
+}
+
+.ligth nav ul li a:hover {
+    color: var(--font-nigth);
 }
 
 /*--DARK MODE--*/
@@ -260,6 +274,11 @@ nav ul li a:hover{
     color: var(--font-nigth);
     font-size: 80px;
 }
+
+.ligth .main-one h2 {
+    color: var(--font-nigth);
+}
+
 .main-one span{
     font-weight: 600;
     font-size: 60px;
@@ -273,6 +292,7 @@ nav ul li a:hover{
 
 .ligth .main-one p {
     color: var(--font-ligth);
+    font-weight: 500;
 }
 
 .ligth .static-text {
@@ -325,6 +345,7 @@ nav ul li a:hover{
     padding: 50px 10px 20px 100px;
 }
 
+
 .projects h1{
     color: var(--font-nigth);
     font-size: 50px;
@@ -334,6 +355,11 @@ nav ul li a:hover{
 .projects h1 span{
     color: #FFDE59;
 }
+
+.ligth .projects span {
+    color: var(--font-nigth);
+}
+
 .projects p{
     color: var(--font-nigth);
     font-size: 17px;
@@ -372,6 +398,10 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
 
+}
+
+.ligth .projects-div:hover {
+    box-shadow: 5px 10px 5px 2px rgb(54, 49, 39);
 }
 
 .projects-div:hover{
@@ -428,6 +458,11 @@ nav ul li a:hover{
     text-align: center;
     position: relative;
 }
+
+.ligth .projects-div p {
+    color: var(--font-nigth);
+}
+
 .projects-div img{
     width: 100px;
     margin: 6px 0;
@@ -443,7 +478,6 @@ nav ul li a:hover{
     padding: 7px 25px;
     font-weight: 500;
     font-size: 22px;
-    border-radius: 0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin-top: 25px;
     border-radius: 50px;
@@ -472,11 +506,22 @@ nav ul li a:hover{
 .about-one h1{
     font-size: 50px;
 }
+
+.ligth .about-one span {
+    color: orange;
+    font-weight: 700;
+}
+
 .about-one p{
     padding: 10px 0;
     width: 95%;
     text-align: justify;
 }
+
+.ligth .about-one p {
+    font-weight: 500;
+}
+
 .about-one span{
     font-size: 30px;
     color: #FFDE59;
@@ -491,7 +536,9 @@ nav ul li a:hover{
     margin: 15px 0;
 }
 .btns button{
-    background-color: #FFDE59;
+    background-color: var(--background-day);
+    border-radius: 50px;
+    border: 1px solid var(--background-day);
     padding: 8px 17px;
     font-size:18px;
     font-weight: 600;
@@ -503,6 +550,12 @@ nav ul li a:hover{
 }
 .btns button:hover{
     transform: scale(1.02);
+}
+
+.ligth .btns button {
+    background-color: #FFDE59;
+    background: var(--background-button-ligth);
+    color: var(--border-color-day);
 }
 
 /*--SECTION CONTACT ME--*/
@@ -523,6 +576,11 @@ nav ul li a:hover{
 .contact h1 span{
     color: #FFDE59;
 }
+
+.ligth .contact h1 span {
+    color: var(--font-nigth);
+}
+
 .contact .box{
     flex-direction: column;
     margin-top: 40px;
@@ -542,6 +600,12 @@ nav ul li a:hover{
     margin: 10px;
     font-size: 16px;
 }
+
+.ligth .contact .box input {
+    color: var(--font-nigth);
+    background-color: var(--background-nigth);
+}
+
 .box div{
     position: relative;
 }
@@ -563,6 +627,11 @@ nav ul li a:hover{
     outline: none;
     margin-left: 30px;
 }
+
+.ligth .box textarea {
+    background-color: var(--background-nigth);
+}
+
 .send{
     background: linear-gradient(#FFDE59 , #ddb100);
     font-size: 19px !important;
@@ -571,11 +640,13 @@ nav ul li a:hover{
     margin: 30px auto !important;
 }
 
+/*--SECTION FOOTER--*/
+
 footer{
     justify-content: space-between;
     padding: 10px 70px;
     background: linear-gradient(#FFDE59 , #ddb100);
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 600;
     color: black;
 }
