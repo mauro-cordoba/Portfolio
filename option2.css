@@ -517,7 +517,7 @@ nav ul li a:hover{
 }
 
 .ligth .about-one span {
-    color: orange;
+    color: orangered;
     font-weight: 700;
 }
 
@@ -566,7 +566,7 @@ nav ul li a:hover{
 .ligth .btns button {
     background-color: #FFDE59;
     background: var(--background-button-ligth);
-    color: var(--border-color-day);
+    color: orangered;
 }
 
 /*--SECTION CONTACT ME--*/
@@ -601,12 +601,12 @@ nav ul li a:hover{
     margin: auto;
 }
 .contact .box input{
-    width: 90%;
+    width: 70%;
     margin: auto;
     outline: none;
     border: none;
     background-color: #FFDE59;
-    padding: 9px 40px;
+    padding: 10px 30px;
     border-radius: 5px;
     margin: 10px;
     font-size: 16px;
@@ -617,16 +617,20 @@ nav ul li a:hover{
     background-color: var(--background-nigth);
 }
 
-.box div{
-    position: relative;
-}
+
 .box div i{
-    position: absolute;
     font-size: 20px;
     color: white;
+    font-weight: 800;
     top: 20px;
     left: 20px;
 }
+
+.ligth .box div i {
+    color: orangered;
+    font-weight: 600;
+}
+
 .contact .box textarea{
     margin-top: 20px;
     background-color: transparent;
@@ -636,14 +640,13 @@ nav ul li a:hover{
     border-radius: 20px;
     border: 1px solid #FFDE59;
     outline: none;
-    margin-left: 30px;
 }
 
 .ligth .box textarea {
     background-color: var(--background-nigth);
 }
 
-.contact #contact-sunmit {
+/*.contact #contact-sunmit {
     border-radius: 20px;
     outline: none;
     border: none;
@@ -652,17 +655,22 @@ nav ul li a:hover{
     border:2px solid #FFDE59;
     font-size: 16px;
     height: 13px;
-    width: 10%;
-}
+    width: 10% !important;
+}*/
 
 .send{
     background: linear-gradient(#FFDE59 , #ddb100);
     font-weight: 600;
     cursor: pointer;
+    width: 20%;
+}
+
+.ligth .send {
+    color: black;
 }
 
 .ligth .contact .box input {
-    color: var(--border-color-day);
+    color: var(--font-nigth);
 }
 
 /*--SECTION FOOTER--*/
