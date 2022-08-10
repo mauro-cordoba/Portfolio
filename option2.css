@@ -299,7 +299,7 @@ nav ul li a:hover{
     color: black;
 }
 
-.main-one button{
+.main-one #btn-main {
     background-color: #FFDE59;
     outline: none;
     border: none;
@@ -342,7 +342,7 @@ nav ul li a:hover{
 
 .description-projects {
     width: 35%;    
-    padding: 50px 10px 20px 100px;
+    padding: 0px 10px 55px 10px;
 }
 
 
@@ -366,7 +366,8 @@ nav ul li a:hover{
     font-weight: 400;
     padding-top: 20px;
 }
-.projects .button{
+.projects .description-projects .button{
+    position: relative;
     background-color: #FFDE59;
     padding: 9px 25px;
     margin-top: 20px;
@@ -395,7 +396,6 @@ nav ul li a:hover{
     position: relative;
     width:300px;
     height: 360px;
-    z-index: 100;
     margin: 20px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -403,6 +403,8 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .ligth .projects-div:hover {
@@ -412,17 +414,27 @@ nav ul li a:hover{
 .projects-div:hover{
     transform: rotate(5deg);
     box-shadow: 2px 5px 5px 2px wheat;
+    background-color: var(--background-nigth);
 }
 
-.projects-div:hover .img {
-    transform: scale(1.03);
-    transition: all 600ms;
+.projects-div:hover p {
+    opacity: 0;
+    transition: all 800ms ease;
+}
+
+.projects-div:hover button {
+    background-color: var(--background-nigth);
+}
+
+.projects-div:hover img:nth-of-type(1) {
+    transform: scale(0.70);
+    transition: all 1100ms ease;
     filter: none;
 }
 
 .projects-div img:nth-of-type(1) {
+    width: 180%;
     filter: blur(3px) grayscale(0.8) brightness(50%);
-
 }
 
 .projects-div h3{
@@ -447,7 +459,7 @@ nav ul li a:hover{
 }
 
 .ligth .projects-div p {
-    color: var(--font-ligth);
+    color: var(--font-nigth);
 }
 
 .projects button {
@@ -459,16 +471,16 @@ nav ul li a:hover{
     border: 1px solid #FFDE59;
     padding: 7px 25px;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 18px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin-top: 25px;
     border-radius: 50px;
-    bottom: 20%;
-    left: 19%;
+    bottom: 18%;
+    left: 23%;
 }
 
 .ligth .projects button {
-    color: var(--font-ligth);
+    color: var(--font-nigth);
 }
 
 .projects button:hover {
@@ -485,10 +497,11 @@ nav ul li a:hover{
     width: 100%;
     height: 400px;
     padding: 30px 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.31);
     justify-content: center;
 }
 .about-one{
-    width: 55%;
+    width: 70%;
     padding: 0 60px;
 }
 .about-one h1{
@@ -515,10 +528,12 @@ nav ul li a:hover{
     color: #FFDE59;
 }
 .about-two{
-    width: 40%;
+    width: 30%;
+    overflow: hidden;
 }
 .about-two img{
-    width: 400px;
+    width: 98%;
+    filter: brightness(0.5);
 }
 .btns{
     margin: 15px 0;
