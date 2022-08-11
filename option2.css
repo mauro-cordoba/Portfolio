@@ -304,9 +304,9 @@ nav ul li a:hover{
     outline: none;
     border: none;
     padding: 9px 35px;
-    margin-top: 20px;
+    margin: 20px 0;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 16px;
     box-shadow: 2px 2px 30px #0e0e0e79;
     font-weight: 600;
     border-radius: 50px;
@@ -315,6 +315,38 @@ nav ul li a:hover{
 .main-one button:hover{
     transform: scale(1.02);
 }
+
+/*--SOCIAL MEDIA ICONS--*/
+
+.social-media {
+    padding: 20px 0;
+    justify-content: left;
+}
+
+.social-media i {
+    font-size: 25px;
+    padding: 5px 10px;
+    color: white;
+}
+
+i:nth-of-type(1):hover {
+    color: #0a66c2;
+    transform: translateY(-5px);
+    transition: all 900ms ease;
+}
+
+i:nth-of-type(2) {
+    color: black;
+    transform: translateY(-5px);
+    transition: all 900ms ease;
+}
+
+i:nth-of-type(4):hover {
+    color: #0088cc;
+    transform: translateY(-5px);
+    transition: all 900ms ease;
+}
+
 .main .myphoto{
     width: 50%;
     z-index: 1;
@@ -542,31 +574,6 @@ nav ul li a:hover{
 .about-two img{
     width: 100%;
     filter: brightness(0.8) ; 
-}
-.btns{
-    margin: 30px 0;
-}
-.btns button{
-    background-color: var(--background-day);
-    border-radius: 50px;
-    border: 1px solid var(--background-day);
-    padding: 8px 17px;
-    font-size:18px;
-    font-weight: 600;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: all ease-out 0.2s;
-    outline: none;
-    border: none;
-}
-.btns button:hover{
-    transform: scale(1.02);
-}
-
-.ligth .btns button {
-    background-color: #FFDE59;
-    background: var(--background-button-ligth);
-    color: orangered;
 }
 
 /*--SECTION CONTACT ME--*/
