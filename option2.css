@@ -42,7 +42,7 @@
 }
 
 .ligth .container p {
-    color: var(--font-ligth);
+    color: var(--font-);
 }
 
 /*--HEADER--*/
@@ -179,6 +179,20 @@ nav ul li a:hover{
     background-attachment: fixed;
 }
 
+.ligth .container .main {
+    background: linear-gradient(
+        315deg,
+        rgb(37, 37, 35) 3%,
+        rgb(206, 184, 60) 38%,
+        rgb(59, 53, 59) 68%,
+        rgb(34, 34, 32) 98%
+    );
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 0%;
@@ -229,6 +243,11 @@ nav ul li a:hover{
     left: 0;
 }
 
+
+.ligth .wave {
+    background: rgb(235, 203, 23, 0.1);
+    backdrop-filter: blur(4px);
+}
 
 @keyframes wave {
     2% {
@@ -295,7 +314,7 @@ nav ul li a:hover{
 }
 
 .ligth .main-one p {
-    color: var(--font-ligth);
+    color: var(--font-nigth);
     font-weight: 500;
 }
 
@@ -402,6 +421,7 @@ nav ul li a:hover{
 
 .ligth .projects span {
     color: var(--font-nigth);
+    text-shadow: 1px 2px 1px black;
 }
 
 .projects p{
@@ -597,7 +617,7 @@ nav ul li a:hover{
 
 .about-one span{
     font-size: 30px;
-    color: orangered;
+    color: #ff4400;
     text-transform: uppercase;
     font-weight: 800;
     padding: 20px 0;
@@ -635,6 +655,7 @@ nav ul li a:hover{
 
 .ligth .contact h1 span {
     color: var(--font-nigth);
+    text-shadow: 1px 2px 1px black;
 }
 
 .contact .box{
@@ -704,7 +725,15 @@ nav ul li a:hover{
 }
 
 .ligth .send {
-    color: black;
+    color: var(--font-nigth);
+    outline: none;
+    border: none;
+    background: rgb(255,68,0);
+    background: linear-gradient(180deg, rgba(255,68,0,1) 0%, rgba(255,100,0,1) 55%);
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
 }
 
 .ligth .contact .box input {
