@@ -445,8 +445,8 @@ nav ul li a:hover{
 }
 
 .ligth .projects .button {
-    background: var(--background-button-ligth);
-    color: var(--border-color-day);
+    background: var(--background-nigth);
+    color: var(--font-nigth);
 }
 
 .projects .button:hover {
