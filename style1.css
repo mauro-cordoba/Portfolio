@@ -570,13 +570,13 @@ nav ul li a:hover{
     border-top: 1px solid rgba(255, 255, 255, 0.31);
     justify-content: center;
     overflow: hidden;
-    background-image: url(/backgroundYEllow.jpg);
+    background-image: url(images/backgroundYEllow.jpg);
     object-fit: cover;
 }
 
 .ligth .about {
     border-top: 1px solid var(--background-nigth);
-    background-image: url(/altumcode-oZ61KFUQsus-unsplash.jpg);
+    background-image: url(images/altumcode-oZ61KFUQsus-unsplash.jpg);
 }
 
 .about-one{

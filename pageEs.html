@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css"> 
+    <link rel="stylesheet" href="style1.css">
+    <title>Portfolio Spanish</title>
+</head>
+<body>
+    <div class="container">
+        <header class="flex">
+          <div class="logo">M / C<span> .</span></div>
+          <nav>
+            <button class="switch" id="switch">
+              <span><i class="lni lni-sun"></i></span>
+              <span><i class="lni lni-night"></i></span>
+            </button>
+            <ul class="flex">
+              <li><a href="#about"> Sobre Mi</a></li>
+              <li><a href="#work"> Proyectos</a></li>
+              <li><a href="#contact"> Contáctame</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="main flex">
+          <div class="main-one">
+            <div class="static-text">
+              <h1>Hola! Soy</h1>
+            </div>
+             <span class="auto"></span>
+            <p>
+                Soy un desarrollador web orientado al frontend y al diseño con conocimiento en bases de datos SQL y lenguaje de backend Python y Javascript.            </p>
+            <button id="btn-main">Descargar CV</button>
+            <div class="social-media">
+              <a href="https://www.linkedin.com/in/mauro-cordoba/" class="linkedin" target="_blank">
+                <i class="lni lni-linkedin-original"></i></a>
+              <a href="https://github.com/mauro-cordoba" class="github" target="_blank">
+                <i class="lni lni-github-original"></i></a>
+              <a href="https://codepen.io/mauro-cordoba" class="codepen" target="_blank">
+                <i class="lni lni-codepen"></i></a>
+              <a href="https://github.com/mauro-cordoba?tab=repositories" class="telegram" target="_blank">
+                <i class="lni lni-telegram-original"></i></a>
+              </div>
+          </div>
+          <div class="myphoto">
+            <img src="images/LogotypeMain.png" alt="Photography front of Mauro Cordoba" />
+            <!--<div class="tracker">
+              <img src="/instagram.png" alt="logotype instagram">
+            </div>-->
+          </div>
+          <div class="waves parallax">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </div>
+  
+        <section class="projects" id="work">
+          <div class="description-projects">
+            <h1>My<br /><span>Projects</span></h1>
+            <p>
+                La mayoría de mis proyectos fueron realizados en el bootcamp de programación de FreeCodeCamp y otros son iniciativas personales para poner a prueba mis conocimientos.            </p>
+            <button class="button">Descargar CV</button>
+          </div>
+          <div class="projects-div div-1">
+            <img src="images/Capture survey form.jpg" alt="Screenshot of survey form">
+            <h3>Formularios y Encuestas</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, ex!
+            </p>
+            <button>Vista Previa</button>
+          </div>
+          <div class="projects-div div-2">
+            <img src="images/Capture Tribute page.jpg" alt="Screenshot of Tribute page">
+            <h3>Pagina Tributo</h3>
+            <p>
+                Se aplican los primeros conceptos de estrutura html con estilos CSS orientados al responsive design.
+            </p>
+            <button>Vista Previa</button>
+          </div>
+          <div class="projects-div div-3">
+            <img src="images/screenshotTechnical.jpg" alt="Screenshot of Technical Documentation Page">
+            <h3>Documentacion Tecnica</h3>
+            <p>
+                Haciendo uso responsable de etiquetas se crea un archivo de documentacion tecnica, con hiperviculos, links y estrutura de diseño responsable.
+            </p>
+            <button>Vista Previa</button>
+          </div>
+          <div class="projects-div div-4">
+            <img src="images/Magazine digital.jpg">
+            <h3>Revista Digital</h3>
+            <p>
+              Diseño responsable de una reviste digital, se aplican conceptos de CSS Grid, elementos before y selectores avanzados para el estilo CSS.
+            </p>
+            <button>Vista Previa</button>
+          </div>
+          <div class="projects-div div-5">
+            <img src="images/Capture landing page.jpg">
+            <h3>Lanzamiento de producto</h3>
+            <p>
+              Proyecto avanados apliacando todos los concetos aprendidos, animaciones, estrutura CSS Grid, elementos Media Querys y variables apicadas.
+            </p>
+            <button>Vista Previa</button>
+          </div>
+        </section>
+       <section class="about flex parallax" id="about">
+          <div class="about-one">
+            <h1>Sobre Mi</h1>
+            <span>Mauro Cordoba</span>
+            <p>
+                Después de trabajar más de 10 años en trabajos que no disfrutaba, decidí renunciar y reorganizar mi vida. Mi edad y mi experiencia me han enseñado la dedicación necesaria para lograr todos los frutos del propio esfuerzo.
+                Sabía que el camino no sería fácil, pero estaba lista para el desafío y tratar de disfrutarlo. Con algo de experiencia en diseño gráfico gracias a mi carrera de arquitectura, comencé a estudiar de manera autodidacta y luego en bootcamps.
+            </p>
+          </div>
+          <div class="about-two">
+            <img src="images/photo2.png" alt="Photography left profile of Mauro Cordoba " />
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <h1>Vamos a <span>Platicar!</span></h1>
+          <div class="box flex">
+            <div>
+              <i class="lni lni-user"></i>
+              <input type="text" placeholder="Nombre.." />
+            </div>
+            <div>
+              <i class="lni lni-envelope"></i>
+              <input type="email" placeholder="Email.." />
+            </div>
+            <textarea
+              name=""
+              id=""
+              cols="60"
+              rows="5"
+              placeholder="Enter your Message here...."
+            ></textarea>
+            <div id="send-box">
+              <button type="submit" class="send">Enviar</button>
+            </div>
+          </div>
+        </section>
+        <footer class="flex" id="footer">
+          <div class="copy">© All rigths reserved by Mauro Cordoba. 2022</div>
+        </footer>
+      </div>
+  
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed = new Typed(".auto", {
+          strings: ["Self-Taugth", "Mauro Cordoba", "Web Developer"],
+          typeSpeed: 100,
+          backSpeed: 130,
+          loop: true,
+        });
+
+        const btnSwicth = document.getElementById('switch');
+
+        btnSwicth.addEventListener('click', () => {
+          document.body.classList.toggle('ligth');
+          btnSwicth.classList.toggle('active');
+
+          if(document.body.classList.contains('ligth')) {
+            localStorage.setItem('ligth-mode', 'true');
+        } else {
+          localStorage.setItem('ligth-mode', 'false');
+        }
+      });
+
+      if(localStorage.getItem('ligth-mode') === 'true' ) {
+        document.body.classList.add('ligth');
+        btnSwicth.classList.add('active');
+      } else {
+        document.body.classList.remove('ligth');
+        btnSwicth.body.classList.remove('active');
+      };
+
+      </script>
+    </body>
+</body>
+</html>
