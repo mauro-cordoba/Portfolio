@@ -8,6 +8,7 @@
    --background-button-ligth: linear-gradient(#FFDE59 , #ddb100);
    --font-ligth: black;
    --font-paragraph: 'Enia01', sans-serif;
+   --font-document: 'Poppins', sans-serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -57,10 +58,10 @@
 .container header{
     position: fixed;
     width: 100%;
+    border-bottom: solid 1px var(--border-color-day);
     background-color: var(--background-nigth);
-    height: 9vh;
-    padding: 10px 40px;
-    justify-content: space-between;
+    min-height: 9vh;
+    justify-content: space-around;
     z-index: 100;
 }
 
@@ -91,7 +92,7 @@ header .logo{
 header nav{
     width: max-content;
     display: flex;
-    margin-right: 100px;
+    margin-left: auto;
 }
 
 nav input{
@@ -331,6 +332,7 @@ nav ul li a:hover{
     font-size: 20px;
     font-weight: 500;
     padding: 10px 0;
+    line-height: 35px;
 }
 
 .ligth #welcome-section p {
@@ -426,6 +428,7 @@ nav ul li a:hover{
 .description-projects {
     width: 35%;    
     padding: 0px 10px 55px 10px;
+    line-height: 30px;
 }
 
 
@@ -442,6 +445,19 @@ nav ul li a:hover{
 
 #projects h1 span{
     color: #FFDE59;
+}
+
+#projects p::first-letter {
+    font-family: var(--font-document);
+    font-weight: bold;
+    color: var(--background-day);
+    font-size: 25px;
+    margin-right: 3px;
+    float: left;
+}
+
+.ligth #projects p::first-letter {
+    color: var(--background-nigth);
 }
 
 .ligth #projects span {
@@ -633,12 +649,21 @@ nav ul li a:hover{
     font-family: var(--font-paragraph);
     font-size: 20px;
     font-style: italic;
-    font-weight: 500;
+    font-weight: 550;
     color: var(--font-ligth);
     width: 95%;
-    font-weight: 500;
     text-align: justify;
     margin-top: 20px;
+    line-height: 30px;
+}
+
+.about-one p::first-letter {
+    font-family: var(--font-document);
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--font-nigth);
+    float: inline-start;
+    margin-right: 5px;
 }
 
 .ligth .about-one p {
@@ -696,12 +721,11 @@ nav ul li a:hover{
     margin-top: 40px;
 }
 .box div{
-    width: 40%;
+    width: 70%;
     margin: auto;
 }
 .contact .box input{
-    width: 70%;
-    margin: auto;
+    min-width: 50%;
     outline: none;
     border: none;
     background-color: #FFDE59;
@@ -745,9 +769,6 @@ nav ul li a:hover{
     background-color: var(--background-nigth);
 }
 
-.contact #send-box {
-    width: 10%;
-}
 
 .send {
     background: linear-gradient(#FFDE59 , #ddb100);
@@ -834,7 +855,65 @@ footer .social i{
     }
     nav {
         transform: scale(0.9);
-        margin-right: 20px;
+        margin-right: 10px;
         transition: all 900ms ease;
+    }
+    #welcome-section {
+        margin-top: 70px;
+    }
+    #welcome-section h1 {
+        font-size: 3.5em;
+    }
+    #welcome-section span {
+        font-size: 3.2em;
+    }
+    .about-one {
+        transform: scale(0.8);
+        transition: all 900ms ease;
+        padding: unset;
+    }
+   .contact .box input {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .logo {
+        display: none;
+    }
+
+    #welcome-section h1 {
+        font-size: 3em;
+    }
+    #welcome-section span {
+        font-size: 3em;
+    }
+    nav {
+        transform: scale(0.8);
+        transition: all 900ms ease;
+    }
+    .about-one {
+        transform: scale(0.8);
+        transition: all 900ms ease;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        display: none;
+    }
+
+    nav {
+        margin-left: unset;
+    }
+    .about-one {
+        transform: scale(0.8);
+        transition: all 900ms ease;
+        padding: unset;
+    }
+
+    .about-two img {
+        display: none;
     }
 }
