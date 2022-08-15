@@ -470,7 +470,7 @@ nav ul li a:hover{
     font-style: italic;
     color: var(--font-nigth);
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     padding-top: 20px;
 }
 
@@ -575,6 +575,11 @@ nav ul li a:hover{
     transform: translate(-50%, -50%);
     margin:0 auto;
     text-align: center;
+}
+
+.projects-div a {
+    text-decoration: none;
+    color: var(--font-nigth);
 }
 
 .ligth .projects-div p {
@@ -725,7 +730,7 @@ nav ul li a:hover{
     margin: auto;
 }
 .contact .box input{
-    min-width: 50%;
+    min-width: 30%;
     outline: none;
     border: none;
     background-color: #FFDE59;
@@ -894,6 +899,10 @@ footer .social i{
         transition: all 900ms ease;
     }
     .about-one {
+        transform: scale(0.7);
+        transition: all 900ms ease;
+    }
+    .contact {
         transform: scale(0.8);
         transition: all 900ms ease;
     }
@@ -908,12 +917,17 @@ footer .social i{
         margin-left: unset;
     }
     .about-one {
-        transform: scale(0.8);
+        transform: scale(0.6);
         transition: all 900ms ease;
         padding: unset;
+        height: auto;
     }
 
     .about-two img {
         display: none;
+    }
+    .contact {
+        transform: scale(0.7);
+        transition: all 900ms ease;
     }
 }
