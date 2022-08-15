@@ -24,16 +24,16 @@
 }
 
 .ligth header {
-    color: var(--background-nigth--);
+    color: var(--font-ligth);
 }
 
 .ligth nav ul li a {
-    color: var(--background-nigth--)
+    color: var(--font-ligth)
 }
 
 .container{
     width: 100%;
-    background-color: #1E1E1E;
+    background-color: var(--background-nigth);
     overflow-x: hidden;
 }
 
@@ -48,10 +48,13 @@
 /*--HEADER--*/
 
 .container header{
+    position: fixed;
     width: 100%;
+    background-color: var(--background-nigth);
     height: 9vh;
     padding: 10px 40px;
     justify-content: space-between;
+    z-index: 100;
 }
 header .logo{
     color: var(--font-nigth);
@@ -165,7 +168,7 @@ nav ul li a:hover{
 .container .main{
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     justify-content: center;
     background: linear-gradient(
         315deg,
@@ -533,7 +536,7 @@ nav ul li a:hover{
     color: var(--font-nigth);
 }
 
-.projects button {
+#projects button {
     position: absolute;
     background-color: transparent;
     cursor: pointer;
@@ -550,11 +553,11 @@ nav ul li a:hover{
     left: 23%;
 }
 
-.ligth .projects button {
+.ligth #projects button {
     color: var(--font-nigth);
 }
 
-.projects button:hover {
+#projects button:hover {
     background: #FFDE59;
     color: black;
     transform: scale(1.08);
