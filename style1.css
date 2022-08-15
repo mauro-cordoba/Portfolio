@@ -287,33 +287,33 @@ nav ul li a:hover{
 
 /*--FIRST PRESENTATION-*/
 
-.main .main-one{
+.main #welcome-section {
     width: 50%;
     padding: 40px 30px;
     padding-left: 100px;
     z-index: 1;
 }
-.main-one h1{
+#welcome-section h1{
     color: var(--font-nigth);
     font-size: 80px;
 }
 
-.ligth .main-one h2 {
+.ligth #welcome-section h2 {
     color: var(--font-nigth);
 }
 
-.main-one span{
+#welcome-section span{
     font-weight: 600;
     font-size: 60px;
     color: #FFDE59;
 }
-.main-one p{
+#welcome-section p{
     color: var(--font-nigth);
     font-size: 17px;
     padding: 10px 0;
 }
 
-.ligth .main-one p {
+.ligth #welcome-section p {
     color: var(--font-nigth);
     font-weight: 500;
 }
@@ -322,7 +322,7 @@ nav ul li a:hover{
     color: black;
 }
 
-.main-one #btn-main {
+#welcome-section #btn-main {
     background-color: #FFDE59;
     outline: none;
     border: none;
@@ -335,43 +335,43 @@ nav ul li a:hover{
     border-radius: 50px;
     transition: all ease-out 0.2s;
 }
-.main-one button:hover{
+#welcome-section button:hover{
     transform: scale(1.02);
 }
 
 /*--SOCIAL MEDIA ICONS--*/
 
-.social-media {
+#profile-link {
     padding: 20px 0;
     justify-content: left;
 }
 
-.social-media i {
+#profile-link i {
     font-size: 25px;
     padding: 5px 10px;
     color: white;
 }
 
-.linkedin i:hover {
+#profile-link .linkedin i:hover {
     color: #0a66c2;
     transform: translateY(-7px);
     transition: all 900ms ease;
 }
 
-.github i:hover {
+#profile-link .github i:hover {
     color: black;
     font-weight: 800;
     transform: scale(1.03) translateY(-7px);
     transition: all 900ms ease;
 }
 
-.codepen i:hover {
+#profile-link .codepen i:hover {
     color: whitesmoke;
     transform: translateY(-7px);
     transition: all 900ms ease;
 }
 
-.telegram i:hover {
+#profile-link .telegram i:hover {
     color: #0088cc;
     transform: translateY(-7px);
     transition: all 900ms ease;
@@ -394,7 +394,7 @@ nav ul li a:hover{
 
 /*--SECTION PROJECTS--*/
 
-.projects{
+#projects{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -409,28 +409,28 @@ nav ul li a:hover{
 }
 
 
-.projects h1 {
+#projects h1 {
     color: var(--font-nigth);
     font-size: 50px;
     line-height: 49px;
     font-weight: 800;
 }
-.projects h1 span{
+#projects h1 span{
     color: #FFDE59;
 }
 
-.ligth .projects span {
+.ligth #projects span {
     color: var(--font-nigth);
     text-shadow: 1px 2px 1px black;
 }
 
-.projects p{
+#projects p{
     color: var(--font-nigth);
     font-size: 17px;
     font-weight: 400;
     padding-top: 20px;
 }
-.projects .description-projects .button{
+#projects .description-projects .button{
     position: relative;
     background-color: #FFDE59;
     padding: 9px 25px;
@@ -444,12 +444,12 @@ nav ul li a:hover{
     border-radius: 50px;
 }
 
-.ligth .projects .button {
+.ligth #projects .button {
     background: var(--background-nigth);
     color: var(--font-nigth);
 }
 
-.projects .button:hover {
+#projects .button:hover {
     transform: scale(1.03);
     transition: all 600ms;
 }
@@ -718,22 +718,25 @@ nav ul li a:hover{
 
 .send {
     background: linear-gradient(#FFDE59 , #ddb100);
+    color: var(--font-ligth);
     font-weight: 600;
-    cursor: pointer;
-    padding: 2px 3px;
-    text-align: center;
-}
-
-.ligth .send {
-    color: var(--font-nigth);
     outline: none;
     border: none;
-    background: rgb(255,68,0);
-    background: linear-gradient(180deg, rgba(255,68,0,1) 0%, rgba(255,100,0,1) 55%);
     padding: 10px 30px;
     border-radius: 5px;
     margin: 10px;
     font-size: 16px;
+}
+
+.ligth .send {
+    color: var(--font-nigth);
+    background: rgb(255,68,0);
+    background: linear-gradient(180deg, rgba(255,68,0,1) 0%, rgba(255,100,0,1) 55%);
+}
+
+.send:hover {
+    transform: scale(1.03);
+    transition: all 600ms;
 }
 
 .ligth .contact .box input {
@@ -765,19 +768,6 @@ footer .social i{
     color: palevioletred;
 }
 
-.tracker {
-    position: fixed;
-    transform: translate(-50%, -50%);
-    width: 40px;
-    z-index: 9999;
-    pointer-events: none;
-    transition: all .15s;
-  }
-  .tracker img {
-    width: 50%;
-    height: 50%;
-}
-
 @media screen and (max-width: 1200px) {
     .main .main-one {
         transform: scale(0.9);
@@ -793,3 +783,5 @@ footer .social i{
     }
 
 }
+
+
