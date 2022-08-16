@@ -17,6 +17,16 @@
     }
 }
 
+body::-webkit-scrollbar {
+	width: 12px;
+	background-color: var(--background-nigth);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--background-day);
+	border-radius: 5px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -609,9 +619,12 @@ nav ul li a:hover{
 
 #projects button:hover {
     background: #FFDE59;
-    color: black;
     transform: scale(1.08);
     transition: all 600ms;
+}
+
+#projects button:hover a {
+    color: #000;
 }
 
 /*--SECTION ABOUT ME--*/
@@ -785,6 +798,7 @@ nav ul li a:hover{
     border-radius: 5px;
     margin: 10px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .ligth .send {
@@ -913,6 +927,22 @@ footer .social i{
         display: none;
     }
 
+    #welcome-section h1 {
+        font-size: 2em;
+    }
+
+    #welcome-section span {
+        font-size: 1.5em;
+    }
+
+    #welcome-section p {
+        font-size: 1em;
+    }
+
+    .main .myphoto {
+        width: 0%;
+    }
+
     nav {
         margin-left: unset;
     }
@@ -923,8 +953,8 @@ footer .social i{
         height: auto;
     }
 
-    .about-two img {
-        display: none;
+    .about-two {
+        width: 0;
     }
     .contact {
         transform: scale(0.7);
