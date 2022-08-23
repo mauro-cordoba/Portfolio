@@ -18,13 +18,14 @@
 }
 
 body::-webkit-scrollbar {
-	width: 12px;
+	width: 14px;
 	background-color: var(--background-nigth);
 }
 
 body::-webkit-scrollbar-thumb {
 	background: var(--background-day);
 	border-radius: 5px;
+    border: 1px solid black;
 }
 
 *{
