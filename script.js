@@ -25,3 +25,6 @@ if(localStorage.getItem('ligth-mode') === 'true' ) {
   document.body.classList.remove('ligth');
   btnSwicth.body.classList.remove('active');
 };
+
+
+prompt("Inserte un numero");

@@ -128,18 +128,18 @@
         </section>
         <section class="contact" id="contact">
           <h1>Let Us <span>Talk!</span></h1>
-          <div class="box flex">
+          <form class="box flex" action="https://formsubmit.co/mauro61816@gmail.com" method="POST">
             <div>
               <i class="lni lni-user"></i>
-              <input type="text" placeholder="Name.." />
+              <input type="text" name="name" placeholder="Name.." />
             </div>
             <div>
               <i class="lni lni-envelope"></i>
-              <input type="email" placeholder="Email.." />
+              <input type="email" name="email" placeholder="Email.." />
             </div>
             <textarea
-              name=""
-              id=""
+              name="message"
+              id="msg"
               cols="60"
               rows="5"
               placeholder="Enter your Message here...."
@@ -147,14 +147,14 @@
             <div id="send-box">
               <button type="submit" class="send">Send</button>
             </div>
-          </div>
+          </form>
         </section>
         <footer class="flex" id="footer">
           <div class="copy">© All rigths reserved by Mauro Cordoba. 2022</div>
         </footer>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <link href="script.js">
+      <script type="text/javascript" src="script.js"></script>
     </body>
 </body>
 </html>
