@@ -26,7 +26,7 @@
         </header>
 
         <div class="main flex">
-          <div class="main-one">
+          <div id="welcome-section">
             <div class="static-text">
               <h1>Hola! Soy</h1>
             </div>
@@ -34,7 +34,7 @@
             <p>
                 Soy un desarrollador web orientado al frontend y al diseño con conocimiento en bases de datos SQL y lenguaje de backend Python y Javascript.            </p>
             <button id="btn-main">Descargar CV</button>
-            <div class="social-media">
+            <div id="profile-link">
               <a href="https://www.linkedin.com/in/mauro-cordoba/" class="linkedin" target="_blank">
                 <i class="lni lni-linkedin-original"></i></a>
               <a href="https://github.com/mauro-cordoba" class="github" target="_blank">
@@ -58,11 +58,12 @@
         </div>
     </div>
   
-        <section class="projects" id="work">
+        <section id="projects">
           <div class="description-projects">
             <h1>My<br /><span>Projects</span></h1>
             <p>
-                La mayoría de mis proyectos fueron realizados en el bootcamp de programación de FreeCodeCamp y otros son iniciativas personales para poner a prueba mis conocimientos.            </p>
+              La mayoría de mis proyectos fueron realizados en el bootcamp de programación de FreeCodeCamp y otros son iniciativas personales para poner a prueba mis conocimientos.
+            </p>
             <button class="button">Descargar CV</button>
           </div>
           <div class="projects-div div-1">
@@ -148,36 +149,7 @@
       </div>
   
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <script>
-        var typed = new Typed(".auto", {
-          strings: ["Self-Taugth", "Mauro Cordoba", "Web Developer"],
-          typeSpeed: 100,
-          backSpeed: 130,
-          loop: true,
-        });
-
-        const btnSwicth = document.getElementById('switch');
-
-        btnSwicth.addEventListener('click', () => {
-          document.body.classList.toggle('ligth');
-          btnSwicth.classList.toggle('active');
-
-          if(document.body.classList.contains('ligth')) {
-            localStorage.setItem('ligth-mode', 'true');
-        } else {
-          localStorage.setItem('ligth-mode', 'false');
-        }
-      });
-
-      if(localStorage.getItem('ligth-mode') === 'true' ) {
-        document.body.classList.add('ligth');
-        btnSwicth.classList.add('active');
-      } else {
-        document.body.classList.remove('ligth');
-        btnSwicth.body.classList.remove('active');
-      };
-
-      </script>
+      <script type="text/javascript" src="/script.js"></script>
     </body>
 </body>
 </html>
